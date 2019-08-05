@@ -2,9 +2,9 @@
 
 # 2019.8.3
 ## 1.卷积、反卷积和扩张卷积
-<img src="1.png" width="200" height="200" div align=left />
-<img src="2.png" width="200" height="200" div align=left />
-<img src="3.png" width="200" height="200" div align=left />
+<img src="pictures/1.png" width="200" height="200" div align=left />
+<img src="pictures/2.png" width="200" height="200" div align=left />
+<img src="pictures/3.png" width="200" height="200" div align=left />
 <br>
 <br>
 <br>
@@ -28,7 +28,7 @@
 
 跳级(skip)结构，将不同池化层的结果进行上采样后来优化输出。
 
-<img src='fcn.png' />
+<img src='pictures/fcn.png' />
 
 ## 3.DeepLab: Semanic Image Segmentation with Deep Convolutional Nets, Atrous Convolution and Fully Connected CRFs
 提出了扩张卷积，有两种实现方式：
@@ -42,11 +42,11 @@
 使用全连接的CRF对预测结果平滑化处理
 
 ## 4.Synergistic Image and Feature Adaptation
-<img src='domain_adaptation.png' />
+<img src='pictures/domain_adaptation.png' />
 
 ## 5.Non-Local Context Encoder: Robust Biomedical Image Segmentation against Adversarial Attacks
-<img src='NLCE.png' />
-<img src='NLCN.png' />
+<img src='pictures/NLCE.png' />
+<img src='pictures/NLCN.png' />
 两个要点：global spatial dependencies & global contextual information
 
 第一个是点与点（像素）之间的联系，第二个是面（整体图像）的普遍特征
@@ -59,7 +59,7 @@
 
 
 ## 6.Large Kernel Matters ---- Improve Semantic Segmentation by Global Convolutional Network
-<img src='Large_Kernel_Matters.png' />
+<img src='pictures/Large_Kernel_Matters.png' />
 提出了GCN模块和BR模块
 - GCN相同于使用了k*k大小的卷积核，但复杂度明显降低
 - GCN中间不会使用非线性函数
