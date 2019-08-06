@@ -61,4 +61,48 @@
   - RL最佳模型比RS最佳模型好1%
   - RL找到的模型普遍比RS找到的好
 
+### 补充
+- mAP的计算方法
+
+## 2.Deformable Convolutional Networks
+### Method
+
+<img src='pictures/2_1.png' />
+
+- deformable convolution
+
+<img src='pictures/2_2.png' />
+
+- deformable RoI pooling
+
+<img src='pictures/2_3.png' />
+
+- deformable PS RoI pooling
+  - PS: Position sensitive
+<img src='pictures/2_4.png' />
+
+
+## 3.Rich feature hierarchies for accurate object detection and semantic segmentation
+### Abstract
+- RCNN
+  - Regions with CNN features
+
+### Introduction
+- PASCAL VOC 2010
+  - RCNN 53.7% vs Selective search for object recognition 35.1%
+- ILSVRC2013
+  - RCNN 31.4% vs OverFeat 24.3%
+- Segmentation on PASCAL VOC 2010
+  - 47.9%
+
+### Methods
+- System
+  - 为不同类独立生成候选区域的模块
+  - 大型卷积神经网络，为每个区域提取出定长特征
+  - 一系列SVM分类器，个数等于类别个数
+
+<img src='pictures/3_1.png' />
+
+
+
 </font>
