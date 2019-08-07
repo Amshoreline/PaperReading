@@ -81,6 +81,7 @@
   - PS: Position sensitive
 <img src='pictures/2_4.png' />
 
+- 扩展：在分支卷积上增加非线性因素，使得计算得出的坐标偏差值被控制在一定范围之内
 
 ## 3.Rich feature hierarchies for accurate object detection and semantic segmentation
 ### Abstract
