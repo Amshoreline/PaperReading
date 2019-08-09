@@ -61,8 +61,6 @@
   - RL最佳模型比RS最佳模型好1%
   - RL找到的模型普遍比RS找到的好
 
-### 补充
-- mAP的计算方法
 
 ## 2.Deformable Convolutional Networks
 ### Method
