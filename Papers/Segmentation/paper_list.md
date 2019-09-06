@@ -1,3 +1,5 @@
+> CVPR 2019 论文的百度云链接 https://pan.baidu.com/s/1yaV_7fTZ0l6MVf4RKpe61Q
+
 ## CPVR 2018
 1.  Learning to segment everything
 2.  Interactive Image Segmentation With Latent Diversity
