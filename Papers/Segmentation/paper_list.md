@@ -26,6 +26,19 @@
 15. Fast Interactive Object Annotation with Curve-GCN
 16. Adaptive Weighting Multi-Field-of-View CNN for Semantic Segmentation in Pathology
 
+## NIPS 2019
+1. Category Anchor-Guided Unsupervised Domain Adaptation for Semantic Segmentation
+2. Gated CRF Loss for Weakly Supervised Semantic Image Segmentation
+3. Neural Diffusion Distance for Image Segmentation
+4. Grid Saliency for Context Explanations of Semantic Segmentation
+5. Weakly Supervised Instance Segmentation using the Bounding Box Tightness Prior
+6. Unsupervised Object Segmentation by Redrawing
+7. Region Mutual Information Loss for Semantic Segmentation
+8. Muti-source Domain Adaptation for Semantic Segmentation
+9. Emergence of Object Segmentation in Perturbed Generative Models
+10. Grid Saliency for Context Explanations of Semantic Segmentation
+11. Topology-Preserving Deep Image Segmentation
+
 ## NIPS 2018
 1.  DifNet: Semantic Segmentation by Diffusion Networks
 2.  A Probabilistic U-Net for Segmentation of Ambiguous Images
