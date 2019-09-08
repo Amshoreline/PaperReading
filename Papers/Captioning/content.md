@@ -128,15 +128,15 @@
 * [Bridging by Word: Image Grounded Vocabulary Construction for Visual Captioning](https://www.aclweb.org/anthology/P19-1652) - Fan Z et al, `ACL 2019`.
 
 ## Medicine
-- Learning to Read Chest X-Rays:Recurrent Neural Cascade Model for Automated Image Annotation `CVPR 2016`.
-- MDNet: A Semantically and Visually Interpretable Medical Image Diagnosis Network `CVPR 2017`.
-- TandemNet: Distilling Knowledge from Medical Images Using Diagnostic Reports as Optional Semantic References `MICCAI 2017`.
-- Hybrid Retrieval-Generation Reinforced Agent for Medical Image Report Generation `NIPS 2018`.
-- On the Automatic Generation of Medical Imaging Reports `ACL 2018`.
-- ChestX-ray8: Hospital-scale Chest X-ray Database and Benchmarks on Weakly-Supervised Classification and Localization of Common Thorax Diseases `CVPR 2017`.
-- TieNet: Text-Image Embedding Network for Common Thorax Disease Classification and Reporting in Chest X-rays `CVPR 2018`.
-- Knowledge-Driven Encode, Retrieve, Paraphrase for Medical Image Report Generation `AAAI 2019`.
-- End-to-End Knowledge-Routed Relational Dialogue System for Automatic Diagnosis `AAAI 2019`.
+- [Learning to Read Chest X-Rays:Recurrent Neural Cascade Model for Automated Image Annotation](https://arxiv.org/abs/1603.08486) `CVPR 2016`.
+- [MDNet: A Semantically and Visually Interpretable Medical Image Diagnosis Network](https://arxiv.org/abs/1707.02485) `CVPR 2017`.
+- [TandemNet: Distilling Knowledge from Medical Images Using Diagnostic Reports as Optional Semantic References](https://arxiv.org/abs/1708.03070) `MICCAI 2017`.
+- [Hybrid Retrieval-Generation Reinforced Agent for Medical Image Report Generation](https://arxiv.org/abs/1805.08298) `NIPS 2018`.
+- [On the Automatic Generation of Medical Imaging Reports](https://arxiv.org/abs/1711.08195) `ACL 2018`.
+- [ChestX-ray8: Hospital-scale Chest X-ray Database and Benchmarks on Weakly-Supervised Classification and Localization of Common Thorax Diseases](https://arxiv.org/abs/1705.02315) `CVPR 2017`.
+- [TieNet: Text-Image Embedding Network for Common Thorax Disease Classification and Reporting in Chest X-rays](https://arxiv.org/abs/1801.04334v1) `CVPR 2018`.
+- [Knowledge-Driven Encode, Retrieve, Paraphrase for Medical Image Report Generation](http://arxiv.org/abs/1903.10122) `AAAI 2019`.
+- [End-to-End Knowledge-Routed Relational Dialogue System for Automatic Diagnosis](https://arxiv.org/abs/1901.10623) `AAAI 2019`.
 
 ## Dataset
 * [nocaps](https://nocaps.org/), LANG: `English`
