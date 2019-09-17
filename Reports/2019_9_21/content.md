@@ -68,3 +68,58 @@
     - 网络结构如下（如果stirde是8，则pooling当中的rate都要乘2）
 
 <img src='pictures/3_3.png' />
+
+
+## Pyramid Scene Parsing Network
+### Abstract
+- Pyramid pooling module
+- PSPNet
+- 数据集
+    - ImageNet 2016
+    - PASCAL VOC 2012
+    - Cityscapes
+### Introduction
+- 贡献
+    - 1.以FCN为基础，提出了PSPNet
+    - 2.提出了针对ResNet的优化策略
+
+### Pyramid Scene Parsing Network
+- Important Observations
+    - ADE20k数据集有150个标签，1038个场景
+    - Mismatched Relationship
+        - 需要提取上下文信息
+    - Confusion Categories
+        - （看起来像是数据集有问题）
+    - Inconspicuous Classes
+        - （例图给人一种吹毛求疵的感觉）
+
+<img src='pictures/4_0.png' />
+
+- 网络结构
+    - backbone使用resnet
+    - 采用扩张卷积策略提取feature map
+    - 多层次Pooling
+    - Pooling卷积，将channel数缩减为原先的 1/N, N为Pooling个数
+    - 双线性插值上采样到原先的feature map大小
+    - 几个上采样结果，加上pooling模块的输入，拼接后卷积输出结果
+    - 目前的结构是 Pooling = {1, 2, 3, 6}
+
+<img src='pictures/4_1.png' />
+
+### Deep Supervision for ResNet-Based FCNs
+
+<img src='pictures/4_2.png' />
+
+### Experiments
+- Implementation Details
+    - 'poly' learning reate policy
+    - Data augmentation
+        - random mirror
+        - random resize between 0.5 and 2
+        - random rotation between -10 and 10 degrees
+        - random Gaussian blur
+
+- 实验结论
+    - 使用average pooling
+    - 深网络 => 好结果
+    - 需要辅助loss
