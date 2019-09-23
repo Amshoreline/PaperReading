@@ -123,3 +123,26 @@
     - 使用average pooling
     - 深网络 => 好结果
     - 需要辅助loss
+
+## SegNet: A Deep Convolutional Encoder-Decoder Architectur for Image Segmentation
+### Abstract
+- 关键点：上采样的方式是追溯之前下采样的模式，反着完成max pooling
+- 目的：节省空间加快速度
+- 数据集：CamVid, Pascal VOC12, SUN RGB-D
+
+### Architecture
+
+<img src='pictures/5_1.png' />
+
+- 实现了N个Decoder
+    - SegNet-Basic
+    - FCN-Basic
+    - Basic-SingleChannelDecoder
+    - FCN-Basic-NoAddition
+    - SegNet-Basic-EncoderAddition
+    - FCN-Basic-NoDimReduction
+
+### 实验发现
+- 将编码器的特征映射全部存储，性能最佳。这在语义轮廓刻画度量(BF)中体现得最为明显。
+- 当预测过程中的内存受到限制时，可以存储压缩形式的编码器特征映射(降维、最大池索引)，并与适当的解码器(如SegNet类型)一起使用，以提高性能。
+- 较大的解码器可以提高给定编码器网络的性能。
