@@ -128,6 +128,8 @@
 * [Bridging by Word: Image Grounded Vocabulary Construction for Visual Captioning](https://www.aclweb.org/anthology/P19-1652) - Fan Z et al, `ACL 2019`.
 
 ## Medicine
+- [A Survey on Biomedical Image Captioning](https://www.aclweb.org/anthology/W19-1803.pdf)
+    - [github_code](https://github.com/nlpaueb/bio_image_caption)
 - [Learning to Read Chest X-Rays:Recurrent Neural Cascade Model for Automated Image Annotation](https://arxiv.org/abs/1603.08486) `CVPR 2016`.
 - [MDNet: A Semantically and Visually Interpretable Medical Image Diagnosis Network](https://arxiv.org/abs/1707.02485) `CVPR 2017`.
 - [TandemNet: Distilling Knowledge from Medical Images Using Diagnostic Reports as Optional Semantic References](https://arxiv.org/abs/1708.03070) `MICCAI 2017`.
@@ -148,7 +150,26 @@
 * [SBUCaptionedPhotoDataset](http://www.cs.virginia.edu/~vicente/sbucaptions/), LANG: `English`.
 * [IAPR TC-12](https://www.imageclef.org/photodata), LANG: `English, German and Spanish`.
 
+## Dataset(Medicine)
+* [IU X-ray](https://iuhealth.org/find-medical-services/x-rays), LANG: `English`
+    - 7,470 frontal and lateral-view chest x-ray images paired. Each patient has 2 images and a report which includes impression, findings, comparison and indication sections. 
+* [PEIR Gross](http://peir.path.uab.edu/library/index.php?/category/106), LANG `English`
+    - 7,443 teaching images, 7,443 sentences
+* [ICLEF-CATION](https://www.imageclef.org/2018/caption), LANG `English`
+    - 232,305 medical images, 232,305 sentences
+* [ChestX-ray](https://www.cc.nih.gov/drd/summers.html)(Chest radiograph dataset ), LANG: `English`
+    - It comprises 108,948 frontal- view X-ray images of 32,717 unique patients with the text- mined 8 disease image labels (where each image can have multi-labels).
+* [OpenI](https://openi.nlm.nih.gov), LANG `English`
+    - An open access biomedical search engine.
+* [RadLex](http://www.radlex.org), LANG `English`
+    - A comprehensive set of radiology terms for use in radiology reporting, decision support, data mining, data registries, education and research.
+* [Mesh](https://www.nlm.nih.gov/mesh/meshhome.html), LANG `English`
+    - It is used for indexing, cataloging, and searching of biomedical and health-related information
+* [Medical Text Indexer](https://ii.nlm.nih.gov/DataSets/index.shtml), LANG `English`
+
+
 ## Image Captioning Challenge
+* [ICLEF-CATION](https://www.imageclef.org/2018/caption)
 * [Microsoft COCO Image Captioning](https://competitions.codalab.org/competitions/3221)
 * [Google AI Blog: Conceptual Captions](http://ai.googleblog.com/2018/09/conceptual-captions-new-dataset-and.html)
 
