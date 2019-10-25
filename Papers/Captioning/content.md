@@ -151,7 +151,7 @@
 * [IAPR TC-12](https://www.imageclef.org/photodata), LANG: `English, German and Spanish`.
 
 ## Dataset(Medicine)
-* [IU X-ray](https://iuhealth.org/find-medical-services/x-rays), LANG: `English`
+* [IU X-ray](https://openi.nlm.nih.gov/gridquery.php?q=Indiana%20chest%20X-ray%20collection&it=xg), LANG: `English`
     - 7,470 frontal and lateral-view chest x-ray images paired. Each patient has 2 images and a report which includes impression, findings, comparison and indication sections. 
 * [PEIR Gross](http://peir.path.uab.edu/library/index.php?/category/106), LANG `English`
     - 7,443 teaching images, 7,443 sentences
