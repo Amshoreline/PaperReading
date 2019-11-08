@@ -8,7 +8,9 @@
 | Large-scale interactive object segmentation with human annotators | 2019 | https://arxiv.org/abs/1903.10830 |
 | Object Instance Annotation with Deep Extreme Level Set Evolution | 2019 | http://www.cs.toronto.edu/~davidj/publication/delse/ |
 | Interactive Full Image Segmentation by Considering All Regions Jointly | 2019 | https://arxiv.xilesou.top/abs/1812.01888 |
+| Scale-aware multi-level guidance for interactive instance segmentation | 2018 | https://arxiv.org/abs/1812.02967v1 |
 | Fast Proposals for Image and Video Annotation Using Modified Echo State Networks | 2018 | https://ieeexplore_ieee.xilesou.top/abstract/document/8614224 |
+| Interactive Image Segmentation With Latent Diversity | 2018 | http://vladlen.info/papers/interactive-segmentation.pdf |
 | Rapid annotation of 3D medical imaging datasets using registration-based interpolation and adaptive slice selection | 2018 | https://ieeexplore_ieee.xilesou.top/abstract/document/8363819 |
 | Efficient Interactive Annotation of Segmentation Datasets with Polygon-RNN++ | 2018 | https://arxiv.org/abs/1803.09693 |
 | Annotating Object Instances with a Polygon-RNN | 2017 |https://arxiv.org/abs/1704.05548 |
