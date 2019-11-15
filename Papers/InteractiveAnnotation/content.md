@@ -20,9 +20,8 @@
 | - | - | - | - |
 | Interactive Full Image Segmentation by Considering All Regions Jointly | 2019 | https://arxiv.xilesou.top/abs/1812.01888 | CVPR2019 |
 | Deep Extreme Cut: From Extreme Points to Object Segmentation | 2018 | https://arxiv.org/abs/1711.09081 | CVPR2018 |
-| *Interactive Medical Image Segmentation Using Deep Learning With Image-Specific Fine Tuning*
- | https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8270673 | 2018 | IEEE Transactions on Medical Imaging
-| DeepIGeoS: A Deep Interactive Geodesic Framework for Medical Image Segmentation | https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8370732 | 2018 | IEEE Transactions on Pattern Analysis and Machine Intelligence |
+| *Interactive Medical Image Segmentation Using Deep Learning With Image-Specific Fine Tuning* | 2018 | https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8270673 |  IEEE Transactions on Medical Imaging |
+| DeepIGeoS: A Deep Interactive Geodesic Framework for Medical Image Segmentation | 2018 | https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8370732 | IEEE Transactions on Pattern Analysis and Machine Intelligence |
 ## 3D reconstruction
 | Title | Year | URL | Commnets |
 | - | - | - | - |
@@ -43,4 +42,4 @@
 ## Evaluation
 | Title | Year | URL | Commnets |
 | - | - | - | - |
-| A comparative evaluation of interactive segmentation algorithms | https://www.sciencedirect.com/science/article/abs/pii/S0031320309000818 | 2010 | None
+| A comparative evaluation of interactive segmentation algorithms | 2010 | https://www.sciencedirect.com/science/article/abs/pii/S0031320309000818 | None
