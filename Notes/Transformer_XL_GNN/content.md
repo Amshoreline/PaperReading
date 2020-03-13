@@ -17,7 +17,7 @@
     - Looking at Transformers from a GNN perspective could inspire us to get rid of a lot of the bells and whistles in the architecture.
 
 ## Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context
-- Mechianisms
+- Mechanisms
     - Segment-level recurrence
     - Novel positional encoding
 - Dataset
@@ -33,6 +33,7 @@
     <img src="pictures/vanilla.png" />
     <img src="pictures/pos_1.png" />
     <img src="pictures/all_1.png" />
+
     - Transformer-XL
     <img src="pictures/transformer-xl.png" />
     <img src="pictures/pos_2.png" />
