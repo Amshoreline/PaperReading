@@ -1,0 +1,88 @@
+# 2020.3.28
+## A Primer in BERTology: What we know about how BERT works
+- Abstract
+    - Studies about inner working of BERT
+    - Overview of the proposed modifications and training regions
+    - Directions for further research
+- Overview of BERT architecture
+    - A stack of Transformer encoder layers
+    - Pre-training and fine-tuning
+- BERT embeddings
+    - embedding: the output vector of a given (typically final) Transformer layer
+    - BERT's representations are contextualized
+- What knowledge does BERT have
+    - Syntactic knowledge
+        - Its representations are hierarchical rather than linear. (akin to syntactic tree)
+        - Embeddings encode information about part of speech, syntactic chunks and roles
+        - Syntactic structures is not directly encoded in self-attention weights, but they can be transformed to reflect it
+        - It takes subject-predicate agreement into account when performing the cloze task
+        - It is better able to detect the presense of NPI(negative polarity item) and the words that allow their use than scope violations
+        - It does not "understand" negation and is insensitive to malformed input
+        - Its encoding of syntactic structure does not indicate that it actually relies on that knowledge
+    - Semantic knowledge
+        - It has some knowledge for semantic roles
+        - It encodes information about entity types, relations, semantic roles, and proto-roles
+        - It struggles with representations of numbers
+    - World knowledge
+        - For some relation types, vanilla BERT is competitive with methods relying on knowledge bases
+        - It cannot reason based on its world knowledge
+- Localizing linguistic knowledge
+    - Self-attention heads
+        - Most self-attention heads do not directly encode any non-trivial linguistic information
+        - Some BERT heads seem to specialize in certain types of syntactic relations
+        - No single head has the complete syntactic tree information
+        - Attention weights are weak indicators of subject-verb agreement and reflexive anafora
+        - Even when attention heads specialize in tracking semantic relations, they do not necessarily contribute to BERT's performance on relavent tasks
+    - BERT layers
+        - The lower layers have the most linear word order information
+        - Syntactic information is the most prominent in the middle BERT layers
+        - There is conflicting evidence about syntactic chunks
+        - The final layers of BERT are the most task-specific
+        - Semantics is spread across the entire model
+- Training BERT
+    - Pre-training BERT
+        - Alternative training objects
+            - Removing NSP dose not hurt or slightly improves task performance
+            - Dynamic masking improves on BERT's MLM by using diverse masks for training examples within an epoch
+            - Beyond-sentence MLM. To replace sentence pairs with arbitrary text streams, and subsample frequent outputs
+            - Permutation language modeling. To replace MLM with training on different permutations of word order in the input sequence, maximizing the probability of the original word order
+            - Span boundary objective aims to predict a masked span using only the representations of the tokens at the span's boundary
+            - Phrase masking and named entity masking aim to improve representation of structured knowledge by masking entities rather than individual words
+            - Continual learning is sequential pre-training on a large number of takss, each with their own loss which are then combined to continually updates the model
+            - Conditional MLM replaces the segmentation embeddings with "label embeddings", which alse include the label for a given sentence from an annotated task dataset
+            - Replacing the MASK token with \[UNK\] token, to learn certain representation for unknowns that could be exploited by a neural machine translation model
+        - Incresing the corpus volume and longer training can bring benefits
+    - Model architecture choices
+        - The number of heads was not as significant as the number of layers
+        - Larger hidden representation size was consistently better
+        - Large-batch training improves both the language model perplexity and downstream task performance
+        - With a batch size of 32k BERT's training time can be significantly reduced with no degradation in performance
+    - Fine-tuning BERT
+        - Taking more labers into account
+        - Two-stage fine-tuning introduces an intermediate superviesd training stage between pretraining and fine-tuning
+        - Adversarial token perturbations improve robustness of the model
+        - It can be successfully approximated by inserting adapter modules
+        - Intialization can have a dramatic effect on the training process
+- How big should BERT be
+    - Overparametrization
+        - All but a few Transformer heads could be pruned without significant losses in performance
+        - Most heads in the same layer show similar self-attention patterns
+    - BERT compression
+        - Knowledge distillation
+        - Quantization
+- Multilingual BERT
+    - mBERT performs surprisingly well in zero-shot transfer on many tasks
+    - Fine-tuning on multilingual datasets is improved by freezing the bottom layers
+    - Improving word alignment in fine-tuning
+    - Translation language modeling is an alternative pre-training objective where words are masked in parallel sentence pairs
+    - 5 pre-training tasks can be combined
+        - Monolingual
+        - Cross-lingual MLM
+        - Translation language modeling
+        - Cross-lingual word recovery
+        - Paraphrase classification
+- Discussion
+    - Directions for further research
+        - Benchmarks that require verbal reasoning
+        - Developing methods to "teach" reasoning
+        - Learning what happens at inference time
